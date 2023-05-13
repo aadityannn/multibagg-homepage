@@ -1,35 +1,28 @@
 import React from "react";
 import { Tooltip } from "react-tooltip";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faLinkedin,
-    faTwitter,
-    faInstagramSquare,
-} from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
     return (
         <div className="App">
             <div className="header">
                 <div className="header-left">
-                    <FontAwesomeIcon icon={faBars} fontSize="24px" />
+                    <i
+                        class="fa-solid fa-bars"
+                        style={{ fontSize: "24px" }}
+                    ></i>
                     <p>MULTIBAGG</p>
                 </div>
                 <div className="header-right">
-                    <FontAwesomeIcon
-                        icon={faLinkedin}
-                        className="header-link"
+                    <i
+                        class="fa-brands fa-linkedin header-link"
                         data-tooltip-content="Coming soon"
                     />
-                    <FontAwesomeIcon
-                        icon={faTwitter}
-                        className="header-link"
+                    <i
+                        class="fa-brands fa-twitter header-link"
                         data-tooltip-content="Coming soon"
                     />
-                    <FontAwesomeIcon
-                        icon={faInstagramSquare}
-                        className="header-link"
+                    <i
+                        class="fa-brands fa-instagram-square header-link"
                         data-tooltip-content="Coming soon"
                     />
                     <Tooltip
