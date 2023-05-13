@@ -6,15 +6,17 @@ import {
     faTwitter,
     faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
     return (
         <div className="App">
-            <div className="header-left">
-                <p>MULTIBAGG</p>
-            </div>
-            <div className="header-right">
-                <div className="header-right-links">
+            <div className="header">
+                <div className="header-left">
+                    <FontAwesomeIcon icon={faBars} fontSize="24px" />
+                    <p>MULTIBAGG</p>
+                </div>
+                <div className="header-right">
                     <FontAwesomeIcon
                         icon={faLinkedin}
                         className="header-link"
@@ -40,13 +42,14 @@ function App() {
             <div className="main">
                 <p className="brand">MULTIBAGG</p>
                 <p className="tagline">
-                    We are building{" "}
-                    <span style={{ letterSpacing: "2px" }}>MULTIBAGG</span> to
-                    help you find your next{" "}
+                    We are building an AI powered platform to help you find your
+                    next{" "}
                     <span style={{ letterSpacing: "2px" }}>MULTIBAGGER</span>{" "}
                     stock.
                 </p>
-                <p className="tagline">Get notified when we launch.</p>
+                <p className="notification-line">
+                    Get notified when we launch.
+                </p>
                 <form>
                     <input
                         type="email"
