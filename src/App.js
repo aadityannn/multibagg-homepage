@@ -6,23 +6,20 @@ function App() {
         <div className="App">
             <div className="header">
                 <div className="header-left">
-                    <i
-                        class="fa-solid fa-bars"
-                        style={{ fontSize: "24px" }}
-                    ></i>
+                    <i className="fa-solid fa-bars"></i>
                     <p>MULTIBAGG</p>
                 </div>
                 <div className="header-right">
                     <i
-                        class="fa-brands fa-linkedin header-link"
+                        className="fa-brands fa-linkedin header-link"
                         data-tooltip-content="Coming soon"
                     />
                     <i
-                        class="fa-brands fa-twitter header-link"
+                        className="fa-brands fa-twitter header-link"
                         data-tooltip-content="Coming soon"
                     />
                     <i
-                        class="fa-brands fa-instagram-square header-link"
+                        className="fa-brands fa-instagram-square header-link"
                         data-tooltip-content="Coming soon"
                     />
                     <Tooltip
