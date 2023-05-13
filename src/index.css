@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 html {
   background-color: beige;
 }
@@ -24,12 +30,12 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem;
   margin-left: 5%;
 }
 
 .header-left p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 5px;
 }
@@ -39,11 +45,11 @@ html {
   justify-content: flex-end;
   align-items: center;
   margin-right: 5%;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .header-right > * {
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -62,12 +68,12 @@ html {
 }
 
 .main p {
-  margin: 8px 16px 8px 16px;
+  margin: 0.5rem 1rem;
 }
 
 .brand {
   letter-spacing: 10px;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -88,7 +94,7 @@ form {
 }
 
 input {
-  width: 400px;
+  width: 25rem;
   border: 1px solid gray;
   border-right: none;
   padding: 10px;
@@ -101,8 +107,8 @@ button {
   cursor: pointer;
   background-color: black;
   color: white;
-  width: 100px;
-  margin-left: -100px;
+  width: 6.25rem;
+  margin-left: -6.25rem;
   border-radius: 999px;
   border: none;
 }
@@ -115,5 +121,5 @@ button {
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
