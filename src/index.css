@@ -95,12 +95,12 @@ html {
   font-size: 1.25rem;
   letter-spacing: 1px;
   text-align: center;
-  margin: 1rem 1rem 0.5rem 1rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
   color: var(--second-color);
 }
 
 form {
-  padding: 8px;
+  padding: 0.5rem;
   display: flex;
 }
 
