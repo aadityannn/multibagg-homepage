@@ -3,6 +3,7 @@ import { Tooltip } from "react-tooltip";
 
 function App() {
     async function handleSubmit(event) {
+        event.preventDefault();
         const email = event.target.email.value;
         console.log("Email: ", email);
         const response = await fetch(
