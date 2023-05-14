@@ -2,6 +2,23 @@ import React from "react";
 import { Tooltip } from "react-tooltip";
 
 function App() {
+    async function handleSubmit(event) {
+        const email = event.target.email.value;
+        console.log("Email: ", email);
+        const response = await fetch(
+            "https://sore-puce-rhinoceros-cape.cyclic.app/",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }),
+            }
+        );
+        const data = await response.json();
+        return data;
+    }
+
     return (
         <div className="App">
             <div className="header">
@@ -40,8 +57,9 @@ function App() {
                 <p className="notification-line">
                     Get notified when we launch.
                 </p>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <input
+                        name="email"
                         type="email"
                         placeholder="Enter a valid email address"
                     />
