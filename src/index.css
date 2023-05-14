@@ -21,10 +21,11 @@ html {
 .App {
   height: 100vh;
   display: grid;
-  grid-template-rows: 80px auto 80px;
+  grid-template-rows: 80px 9fr 1fr 80px;
 }
 
 .header {
+  grid-row: 1 / 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,6 +68,7 @@ html {
 }
 
 .main {
+  grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -124,6 +126,7 @@ button {
 }
 
 .footer {
+  grid-row: 4 / 5;
   display: flex;
   justify-content: space-around;
   align-items: center;
