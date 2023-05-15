@@ -89,6 +89,7 @@ html {
   text-align: center;
   line-height: 1.5;
   margin: 0.5rem 1rem;
+  font-size: 0.9375rem;
 }
 
 .notification-line {
@@ -96,7 +97,7 @@ html {
   text-align: center;
   margin: 0.5rem 1rem 0.5rem 1rem;
   color: var(--second-color);
-  font-size: 0.9375rem;
+  font-size: 1.25rem;
 }
 
 .thanks-container {
