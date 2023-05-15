@@ -67,7 +67,7 @@ function App() {
             </div>
             <div className="footer">
                 <p className="footer">
-                    © Copyright 2023. Made with ❤️ in India.
+                    © Copyright 2023. Made with 🖤 in India.
                 </p>
             </div>
         </div>
