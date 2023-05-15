@@ -1,10 +1,14 @@
 import React from "react";
 import { Tooltip } from "react-tooltip";
+import EmailForm from "./components/EmailForm";
+import Thanks from "./components/Thanks";
 
 function App() {
+    const [submitted, setSubmitted] = React.useState(false);
+
     async function handleSubmit(event) {
+        event.preventDefault();
         const email = event.target.email.value;
-        console.log("Email: ", email);
         const response = await fetch(
             "https://sore-puce-rhinoceros-cape.cyclic.app/",
             {
@@ -16,7 +20,8 @@ function App() {
             }
         );
         const data = await response.json();
-        return data;
+        console.log(data);
+        setSubmitted(true);
     }
 
     return (
@@ -54,21 +59,15 @@ function App() {
                     <span style={{ letterSpacing: "2px" }}>MULTIBAGGER</span>{" "}
                     stock.
                 </p>
-                <p className="notification-line">
-                    Get notified when we launch.
-                </p>
-                <form onSubmit={handleSubmit}>
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Enter a valid email address"
-                    />
-                    <button type="submit">Submit</button>
-                </form>
+                {submitted ? (
+                    <Thanks />
+                ) : (
+                    <EmailForm handleSubmit={handleSubmit} />
+                )}
             </div>
             <div className="footer">
                 <p className="footer">
-                    © Copyright 2023. Made with 🖤 in India.
+                    © Copyright 2023. Made with ❤️ in India.
                 </p>
             </div>
         </div>
