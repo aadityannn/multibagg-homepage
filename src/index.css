@@ -97,7 +97,7 @@ html {
   text-align: center;
   margin: 0.5rem 1rem 0.5rem 1rem;
   color: var(--second-color);
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
 }
 
 .thanks-container {
@@ -133,6 +133,7 @@ input {
   border-right: none;
   padding: 10px;
   text-align: center;
+  font-size: 0.9375rem;
 }
 
 button {
@@ -142,6 +143,7 @@ button {
   color: white;
   width: 6.25rem;
   border: none;
+  font-size: 0.9375rem;
 }
 
 .footer {
