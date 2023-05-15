@@ -152,13 +152,14 @@ form {
 }
 
 input {
-  width: 20rem;
+  width: 18rem;
   border: 1px solid gray;
   border-right: none;
   padding: 10px;
   text-align: center;
   font-size: 0.9375rem;
   letter-spacing: 1px;
+  border-radius: 999px 0 0 999px;
 }
 
 button {
@@ -170,6 +171,7 @@ button {
   border: none;
   font-size: 0.9375rem;
   letter-spacing: 1px;
+  border-radius: 0 999px 999px 0;
 }
 
 .footer {
