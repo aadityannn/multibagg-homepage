@@ -106,12 +106,11 @@ form {
 }
 
 input {
-  width: 25rem;
+  width: 16rem;
   border: 1px solid gray;
   border-right: none;
   padding: 10px;
-  border-right: none;
-  border-radius: 999px;
+  text-align: center;
 }
 
 button {
@@ -120,8 +119,6 @@ button {
   background-color: var(--second-color);
   color: white;
   width: 6.25rem;
-  margin-left: -6.25rem;
-  border-radius: 999px;
   border: none;
 }
 
