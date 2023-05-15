@@ -10,16 +10,18 @@ function App() {
         event.preventDefault();
         setSubmitted(true);
         const email = event.target.email.value;
-        await fetch("https://sore-puce-rhinoceros-cape.cyclic.app/", {
-            method: "POST",
-            mode: "no-cors",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email }),
-        });
-        // const data = await response.json();
-        // console.log(data);
+        const response = await fetch(
+            "https://sore-puce-rhinoceros-cape.cyclic.app/",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }),
+            }
+        );
+        const data = await response.json();
+        console.log(data);
     }
 
     return (
