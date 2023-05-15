@@ -8,6 +8,7 @@ function App() {
 
     async function handleSubmit(event) {
         event.preventDefault();
+        setSubmitted(true);
         const email = event.target.email.value;
         const response = await fetch(
             "https://sore-puce-rhinoceros-cape.cyclic.app/",
@@ -21,7 +22,6 @@ function App() {
         );
         const data = await response.json();
         console.log(data);
-        setSubmitted(true);
     }
 
     return (
