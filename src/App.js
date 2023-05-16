@@ -1,27 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tooltip } from "react-tooltip";
 import EmailForm from "./components/EmailForm";
 import Thanks from "./components/Thanks";
+import BounceLoader from "react-spinners/BounceLoader";
 
 function App() {
-    const [submitted, setSubmitted] = React.useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     async function handleSubmit(event) {
         event.preventDefault();
-        setSubmitted(true);
+        setLoading(true);
         const email = event.target.email.value;
-        const response = await fetch(
-            "https://sore-puce-rhinoceros-cape.cyclic.app/",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email }),
-            }
-        );
-        const data = await response.json();
-        console.log(data);
+        await fetch("https://sore-puce-rhinoceros-cape.cyclic.app/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email }),
+        });
+        setLoading(false);
+        setSubmitted(true);
     }
 
     return (
@@ -61,6 +60,8 @@ function App() {
                 </p>
                 {submitted ? (
                     <Thanks />
+                ) : loading ? (
+                    <BounceLoader />
                 ) : (
                     <EmailForm handleSubmit={handleSubmit} />
                 )}
