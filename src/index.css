@@ -100,12 +100,8 @@ html {
   letter-spacing: 1px;
   text-align: center;
   line-height: 1.5;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem 1rem;
   font-size: 0.9375rem;
-}
-
-.custom-loader {
-  color: darkgreen;
 }
 
 .thanks-container {
@@ -113,7 +109,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
 }
 
 .animated-fast {
@@ -146,7 +141,7 @@ html {
 .notification-line {
   letter-spacing: 1px;
   text-align: center;
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 1rem 0.5rem 1rem;
   font-size: 0.9375rem;
 }
 
