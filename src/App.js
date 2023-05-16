@@ -4,6 +4,8 @@ import EmailForm from "./components/EmailForm";
 import Thanks from "./components/Thanks";
 import BounceLoader from "react-spinners/BounceLoader";
 
+const SERVER = "https://sore-puce-rhinoceros-cape.cyclic.app/";
+
 function App() {
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -12,7 +14,7 @@ function App() {
         event.preventDefault();
         setLoading(true);
         const email = event.target.email.value;
-        await fetch("https://sore-puce-rhinoceros-cape.cyclic.app/", {
+        await fetch(SERVER, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
