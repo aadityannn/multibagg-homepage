@@ -61,7 +61,7 @@ function App() {
                 {submitted ? (
                     <Thanks />
                 ) : loading ? (
-                    <BounceLoader />
+                    <BounceLoader className="custom-loader" />
                 ) : (
                     <EmailForm handleSubmit={handleSubmit} />
                 )}

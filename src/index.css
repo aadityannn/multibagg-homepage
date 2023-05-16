@@ -104,6 +104,10 @@ html {
   font-size: 0.9375rem;
 }
 
+.custom-loader {
+  color: darkgreen;
+}
+
 .thanks-container {
   display: flex;
   flex-direction: column;
