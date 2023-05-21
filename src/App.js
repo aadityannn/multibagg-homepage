@@ -69,7 +69,7 @@ function App() {
                 )}
             </div>
             <div className="footer">
-                <p className="footer">
+                <p className="footer-text">
                     © Copyright 2023. Made with 🖤 in India.
                 </p>
             </div>
