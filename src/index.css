@@ -181,6 +181,7 @@ button {
   margin: 0 5%;;
 }
 
-.footer p {
+.footer-text {
   font-size: 0.75rem;
+  letter-spacing: 1px;
 }
